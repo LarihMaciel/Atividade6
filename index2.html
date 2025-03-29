@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <script>
+        //Saudação personalizada
+        let nome = prompt("Qual é o seu nome?");
+        document.write(`<h2>Olá, ${nome}! Seja bem-vindo!</h2>`);
+    </script>
+
+<script>
+    //Conversão de temperatura
+    let celsius = prompt("Digite a temperatura em graus Celsius:");
+    
+    celsius = Number(celsius);
+
+    let fahrenheit = (celsius * 1.8) + 32;
+
+    document.write(`<h2>${celsius}°C equivale a ${fahrenheit.toFixed(2)}°F</h2>`);
+</script>
+
+<script>
+    //Calculadora básica
+    let num1 = prompt("Digite o primeiro número:");
+    let num2 = prompt("Digite o segundo número:");
+
+    num1 = Number(num1);
+    num2 = Number(num2);
+
+    let soma = num1 + num2;
+    let subtracao = num1 - num2;
+    let multiplicacao = num1 * num2;
+    let divisao = num1 / num2;
+
+    document.write("<h2>Resultados:</h2>");
+    document.write(`<p>${num1} + ${num2} = ${soma}</p>`);
+    document.write(`<p>${num1} - ${num2} = ${subtracao}</p>`);
+    document.write(`<p>${num1} × ${num2} = ${multiplicacao}</p>`);
+    document.write(`<p>${num1} ÷ ${num2} = ${divisao.toFixed(2)}</p>`);
+</script>
+</body>
+</html>

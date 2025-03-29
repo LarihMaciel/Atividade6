@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <script>
+        //Verificação de maioridade
+        let idade = prompt("Qual a sua idade?");
+
+        idade = Number(idade);
+
+        if (idade >= 18) {
+            document.write(`<h2>Você tem ${idade} anos e é maior de idade.</h2>`);
+        } else {
+            document.write(`<h2>Você tem ${idade} anos e é menor de idade.</h2>`);
+        }
+    </script>
+
+    <script>
+        //Cálculo de desconto
+        let precoOriginal = prompt("Digite o preço original do produto:");
+        let desconto = prompt("Digite a porcentagem de desconto:");
+
+       precoOriginal = Number(precoOriginal);
+       desconto = Number(desconto);
+
+       let valorDesconto = (precoOriginal * desconto) / 100;
+       let precoFinal = precoOriginal - valorDesconto;
+
+      document.write(`<h2>Preço original: R$ ${precoOriginal.toFixed(2)}</h2>`);
+      document.write(`<h2>Desconto aplicado: ${desconto}% (R$ ${valorDesconto.toFixed(2)})</h2>`);
+      document.write(`<h2>Preço final: R$ ${precoFinal.toFixed(2)}</h2>`);
+    </script>
+
+    <script>
+      //Conversão de moedas
+      const cotacaoDolar = 5.00;
+
+      let valorReais = prompt("Digite um valor em reais (R$):");
+
+      valorReais = Number(valorReais);
+
+      let valorDolares = valorReais / cotacaoDolar;
+
+      document.write(`<h2>Valor em Reais: R$ ${valorReais.toFixed(2)}</h2>`);
+      document.write(`<h2>Valor em Dólares: $ ${valorDolares.toFixed(2)}</h2>`);
+    </script>
+</body>
+</html>
